@@ -1,0 +1,59 @@
+[
+    {
+        "nombre": "allison salinas gonzalez",
+        "email": "seugd7@gmail.com",
+        "telefono": "7363748788",
+        "sitio_web": "",
+        "edad": "20",
+        "fecha_nacimiento": "2000-10-09",
+        "hora_contacto": "14:00",
+        "genero": "Femenino",
+        "intereses": [
+            "Tecnología"
+        ],
+        "pais": "México",
+        "navegador": "",
+        "nivel_ingles": "18",
+        "color": "#4d4da3",
+        "biografia": "holaaaaa",
+        "fecha_registro": "2026-09-21 04:59:36"
+    },
+    {
+        "nombre": "allison salinas gonzalez",
+        "email": "seugd7@gmail.com",
+        "telefono": "7363748788",
+        "sitio_web": "",
+        "edad": "20",
+        "fecha_nacimiento": "2000-10-09",
+        "hora_contacto": "14:00",
+        "genero": "Femenino",
+        "intereses": [
+            "Tecnología"
+        ],
+        "pais": "México",
+        "navegador": "",
+        "nivel_ingles": "18",
+        "color": "#4d4da3",
+        "biografia": "holaaaaa",
+        "fecha_registro": "2026-09-21 05:01:39"
+    },
+    {
+        "nombre": "allison salinas gonzalez",
+        "email": "seugd7@gmail.com",
+        "telefono": "7363748788",
+        "sitio_web": "",
+        "edad": "20",
+        "fecha_nacimiento": "2000-10-09",
+        "hora_contacto": "14:00",
+        "genero": "Femenino",
+        "intereses": [
+            "Tecnología"
+        ],
+        "pais": "México",
+        "navegador": "",
+        "nivel_ingles": "18",
+        "color": "#4d4da3",
+        "biografia": "holaaaaa",
+        "fecha_registro": "2026-09-21 05:02:24"
+    }
+]

@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #080808;
+    background-image: 
+        radial-gradient(circle at 50% 20%, #1a1a24 0%, transparent 60%),
+        radial-gradient(circle at 80% 80%, #121216 0%, transparent 50%);
+    color: #d1d1d1;
+    font-family: 'Montserrat', sans-serif;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 850px;
+    background: #0d0d11;
+    border: 2px solid #444;
+    padding: 35px;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.05), inset 0 0 15px rgba(0, 0, 0, 0.8);
+    position: relative;
+}
+
+/* Detalle decorativo superior */
+.container::before, .container::after {
+    content: '✦';
+    position: absolute;
+    font-size: 18px;
+    color: #aaa;
+}
+.container::before { top: 8px; left: 12px; }
+.container::after { top: 8px; right: 12px; }
+
+h1 {
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: 4px;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 12px;
+    color: #777;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.alert {
+    background: #182218;
+    border: 1px solid #4caf50;
+    color: #81c784;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+fieldset {
+    border: 1px solid #333;
+    padding: 20px;
+    margin-bottom: 25px;
+    background: rgba(18, 18, 22, 0.6);
+}
+
+legend {
+    font-family: 'Cinzel', serif;
+    color: #ffffff;
+    padding: 0 10px;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.field-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 6px;
+    letter-spacing: 0.5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="url"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+select,
+textarea {
+    background: #050005;
+    border: 1px solid #333;
+    color: #eee;
+    padding: 10px;
+    font-size: 13px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #888;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+}
+
+.inline-group {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+
+.inline-group label {
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+input[type="range"] {
+    accent-color: #888;
+}
+
+input[type="color"] {
+    border: none;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    background: transparent;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+button, input[type="submit"], input[type="reset"], input[type="button"] {
+    background: #111;
+    border: 1px solid #555;
+    color: #ddd;
+    padding: 10px 20px;
+    font-family: 'Cinzel', serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
+    background: #eee;
+    color: #111;
+    border-color: #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
