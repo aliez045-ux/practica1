@@ -1,0 +1,278 @@
+/* ===================================================
+   Estilo Gótico / Dark Academia con Recuadros Estilizados
+   =================================================== */
+
+/* Importación de fuentes góticas y serif */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=UnifrakturMaguntia&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0c080a;
+    background-image: 
+        radial-gradient(circle at 50% 50%, rgba(55, 20, 30, 0.4) 0%, rgba(12, 8, 10, 0.98) 100%),
+        repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.01) 0px, rgba(255, 255, 255, 0.01) 1px, transparent 1px, transparent 10px);
+    color: #c9c3c5;
+    font-family: 'Cinzel', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 50px 15px;
+}
+
+/* ===================================================
+   CONTENEDOR PRINCIPAL: Estilo Nota Clavada / Marco
+   =================================================== */
+.contenedor-gotico {
+    background: linear-gradient(145deg, #181013, #110a0d);
+    border: 2px solid #4a252f;
+    outline: 1px solid rgba(229, 222, 222, 0.15);
+    outline-offset: -7px;
+    border-radius: 4px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.9);
+    padding: 45px 35px 35px 35px;
+    max-width: 780px;
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+}
+
+/* Chincheta / Pin en la parte superior del contenedor principal */
+.contenedor-gotico::before {
+    content: '';
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 18px;
+    height: 18px;
+    background: radial-gradient(circle at 30% 30%, #e8c56c, #8a6218);
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8), inset 0 2px 3px rgba(255, 255, 255, 0.6);
+    z-index: 10;
+}
+
+/* Títulos */
+h1, h2 {
+    font-family: 'UnifrakturMaguntia', cursive;
+    text-align: center;
+    color: #f0e6e6;
+    font-size: 2.3em;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(140, 45, 66, 0.4);
+    border-bottom: 1px dashed #4a252f;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+h3, h4 {
+    font-family: 'Cinzel', serif;
+    color: #c4929e;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+}
+
+/* ===================================================
+   MENÚ DE NAVEGACIÓN: Estilo Hoja con Cintas en las Esquinas
+   =================================================== */
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 35px;
+    background: #0d0709;
+    padding: 14px;
+    border: 1px solid #3d1f27;
+    position: relative;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+/* Cinta de pegar en la esquina superior izquierda */
+.nav-menu::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -12px;
+    width: 45px;
+    height: 16px;
+    background: rgba(140, 45, 66, 0.4);
+    border: 1px solid rgba(196, 146, 158, 0.3);
+    transform: rotate(-25deg);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Cinta de pegar en la esquina inferior derecha */
+.nav-menu::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    right: -12px;
+    width: 45px;
+    height: 16px;
+    background: rgba(140, 45, 66, 0.4);
+    border: 1px solid rgba(196, 146, 158, 0.3);
+    transform: rotate(-25deg);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.nav-menu a {
+    color: #9e8d92;
+    text-decoration: none;
+    padding: 8px 12px;
+    font-size: 0.8em;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.nav-menu a:hover, .nav-menu a.activo {
+    color: #ffffff;
+    background: rgba(140, 45, 66, 0.25);
+    border-color: #8c2d42;
+    box-shadow: 0 0 8px rgba(140, 45, 66, 0.4);
+}
+
+/* ===================================================
+   FORMULARIO Y BLOQUES DE INFORMACIÓN
+   =================================================== */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 25px;
+}
+
+label {
+    font-size: 0.82em;
+    color: #b8a5aa;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+input[type="text"], input[type="number"] {
+    background-color: #0a0607;
+    border: 1px solid #381c23;
+    color: #f0e6e6;
+    padding: 12px;
+    font-family: 'Cinzel', serif;
+    font-size: 0.9em;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    border-color: #8c2d42;
+    outline: none;
+    box-shadow: 0 0 8px rgba(140, 45, 66, 0.5);
+}
+
+button, input[type="submit"] {
+    background: linear-gradient(180deg, #30171e 0%, #170a0e 100%);
+    color: #e0cfd3;
+    border: 1px solid #572935;
+    padding: 12px;
+    cursor: pointer;
+    font-family: 'Cinzel', serif;
+    font-size: 0.85em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover, input[type="submit"]:hover {
+    background: #8c2d42;
+    color: #ffffff;
+    border-color: #c4929e;
+    box-shadow: 0 0 12px rgba(140, 45, 66, 0.6);
+}
+
+/* Bloque / Tarjeta de Contenido estilo Libreta de Notas */
+.bloque-item {
+    border: 1px solid #381c23;
+    border-left: 4px solid #8c2d42; /* Borde estilo libreta */
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #0e080a;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+/* Tablas estilizadas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #0a0607;
+}
+
+table, th, td {
+    border: 1px solid #2d161c;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    font-size: 0.85em;
+}
+
+th {
+    background-color: #1a0b10;
+    color: #c4929e;
+    font-weight: normal;
+    letter-spacing: 1.5px;
+}
+
+/* Grid de Series estilo Columnas */
+.grid-series {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.columna-serie {
+    flex: 1;
+    background: #0a0607;
+    border: 1px solid #381c23;
+    padding: 15px;
+    border-radius: 2px;
+    text-align: center;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.columna-serie div {
+    padding: 6px 0;
+    border-bottom: 1px dashed #1f0f13;
+    font-size: 0.85em;
+}
+
+/* Primos */
+.lista-primos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.chip-primo {
+    background: #1a0b10;
+    border: 1px solid #572935;
+    color: #e0cfd3;
+    padding: 6px 14px;
+    border-radius: 2px;
+    font-size: 0.85em;
+}
