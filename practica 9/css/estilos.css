@@ -1,0 +1,148 @@
+/* Fuente gótica estilo Old English */
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Montserrat:wght@300;400;600&display=swap');
+
+:root {
+    --bg-main: #141f2e;
+    --bg-card: rgba(255, 255, 255, 0.05);
+    --border-card: rgba(0, 242, 254, 0.25);
+    --text-primary: #cbd5e1;
+    --text-accent: #00f2fe;
+    --font-gothic: 'UnifrakturMaguntia', 'UnifrakturCook', cursive, serif;
+    --font-body: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--bg-main);
+    background-image: radial-gradient(circle at 50% 20%, #223448 0%, #0d141e 100%);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    margin: 0;
+    padding: 30px 20px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+/* Títulos con tipografía gótica (Old English) */
+h1, h2, h3, .gothic-title {
+    font-family: var(--font-gothic);
+    color: #e2e8f0;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px rgba(0, 242, 254, 0.4);
+    margin-top: 0;
+}
+
+h1 { 
+    font-size: 2.8rem; 
+    text-align: center; 
+    margin-bottom: 25px;
+}
+
+h2 { 
+    font-size: 1.8rem; 
+}
+
+/* Tarjetas estáticas (sin animaciones) */
+.card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-card);
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(10px);
+}
+
+p, label, li {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-primary);
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid var(--border-card);
+    text-align: center;
+}
+
+th {
+    font-family: var(--font-gothic);
+    font-size: 1.3rem;
+    background-color: rgba(0, 242, 254, 0.15);
+    color: #fff;
+}
+
+/* Formularios */
+input, select {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid var(--border-card);
+    background: rgba(15, 23, 42, 0.8);
+    color: #fff;
+    font-size: 0.95rem;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: var(--text-accent);
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid var(--border-card);
+    background: linear-gradient(135deg, #1e3a8a, #0284c7);
+    color: #fff;
+    cursor: pointer;
+    font-family: var(--font-gothic);
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #0284c7, #00f2fe);
+    color: #000;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.nav-menu a {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-family: var(--font-gothic);
+    font-size: 1.3rem;
+    padding: 12px 18px;
+    border: 1px solid var(--border-card);
+    border-radius: 8px;
+    background: var(--bg-card);
+}
+
+.nav-menu a:hover {
+    color: var(--text-accent);
+    border-color: var(--text-accent);
+}
+
+.btn-back {
+    display: inline-block;
+    color: var(--text-accent);
+    text-decoration: none;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.btn-back:hover {
+    color: #fff;
+}
