@@ -1,0 +1,212 @@
+/* ===================================================
+   HOJA DE ESTILOS - PRÁCTICA 11 (TEMA AZUL NOCTURNO/MARINO)
+   =================================================== */
+
+/* Importación de tipografía estilo manuscrita alta (Google Fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Quicksand:wght@400;600;700&display=swap');
+
+/* Reset y estilos generales del fondo */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Patrick Hand', 'Quicksand', cursive, sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.8px;
+    color: #e0f2fe;
+    /* Fondo con degradado azul profundo y patrón celestial/marino */
+    background: radial-gradient(circle at 50% 20%, #1e3a8a 0%, #0f172a 60%, #020617 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding: 30px 20px;
+}
+
+/* Enlaces y botones de navegación */
+a {
+    color: #93c5fd;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #60a5fa, 0 0 20px #93c5fd;
+}
+
+/* Encabezados principales */
+h1, h2, h3, h4 {
+    font-family: 'Patrick Hand', cursive;
+    color: #f0f9ff;
+    text-align: center;
+    margin-bottom: 15px;
+    text-shadow: 0 0 12px rgba(147, 197, 253, 0.6);
+}
+
+h1 {
+    font-size: 2.8rem;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 2.2rem;
+    color: #bfdbfe;
+}
+
+h3 {
+    font-size: 1.8rem;
+    color: #93c5fd;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Contenedores principales y tarjetas (Efecto Glassmorphism) */
+header, section, fieldset, form {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 25px 30px;
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(147, 197, 253, 0.3);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(2, 6, 23, 0.7), inset 0 0 15px rgba(96, 165, 250, 0.15);
+}
+
+/* Navegación del Menú Principal (index.php) */
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 25px;
+    background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
+    border: 1.5px solid #60a5fa;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(30, 58, 138, 0.5);
+}
+
+nav ul li a:hover {
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(96, 165, 250, 0.7);
+}
+
+/* Botones de acción generales */
+button, input[type="submit"] {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.3rem;
+    padding: 10px 24px;
+    background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+    color: #ffffff;
+    border: 1px solid #93c5fd;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 12px rgba(37, 99, 235, 0.4);
+}
+
+button:hover, input[type="submit"]:hover {
+    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+    box-shadow: 0 0 18px rgba(147, 197, 253, 0.8);
+    transform: scale(1.03);
+}
+
+/* Formulario e Inpust */
+input[type="text"], input[type="number"], input[type="url"], textarea, select {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.2rem;
+    padding: 8px 14px;
+    background: rgba(30, 41, 59, 0.8);
+    color: #f8fafc;
+    border: 1.5px solid #60a5fa;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 5px;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="number"]:focus, textarea:focus {
+    border-color: #bfdbfe;
+    box-shadow: 0 0 10px rgba(191, 219, 254, 0.5);
+}
+
+/* Opciones de examen en línea (radio buttons) */
+input[type="radio"] {
+    accent-color: #3b82f6;
+    transform: scale(1.2);
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+/* Estilos de Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: rgba(15, 23, 42, 0.6);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(147, 197, 253, 0.3);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(147, 197, 253, 0.15);
+}
+
+th {
+    background: rgba(30, 58, 138, 0.8);
+    color: #f0f9ff;
+    font-size: 1.2rem;
+}
+
+tr:hover {
+    background: rgba(30, 41, 59, 0.5);
+}
+
+/* Imágenes dentro de tarjetas o secciones */
+.contenedor-imagen, img {
+    max-width: 100%;
+    border-radius: 15px;
+    border: 2px solid rgba(147, 197, 253, 0.4);
+    box-shadow: 0 0 20px rgba(30, 58, 138, 0.6);
+    margin: 15px auto;
+    display: block;
+}
+
+/* Bloques de código (para el tema de SQL) */
+pre, code {
+    font-family: 'Courier New', Courier, monospace;
+    background: #020617;
+    color: #7dd3fc;
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: 1px solid #1e3a8a;
+    display: block;
+    overflow-x: auto;
+    margin: 10px 0;
+}
+
+/* Líneas divisoras decorativas */
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #60a5fa, transparent);
+    margin: 30px 0;
+}
