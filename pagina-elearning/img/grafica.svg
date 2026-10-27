@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240">
+  <rect width="320" height="240" fill="#0b1030"/>
+  <g stroke="#2a3a78" stroke-width="1">
+    <path d="M40,20V220M80,20V220M120,20V220M160,20V220M200,20V220M240,20V220M280,20V220"/>
+    <path d="M20,40H300M20,80H300M20,120H300M20,160H300M20,200H300"/>
+  </g>
+  <g stroke="#dfe8f5" stroke-width="2.5"><path d="M20,160H305"/><path d="M160,15V225"/></g>
+  <path d="M40,40 C80,200 120,210 160,160 C200,110 240,20 285,20" fill="none" stroke="#a9bfdf" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M40,200 L285,40" fill="none" stroke="#f3c623" stroke-width="2.5" stroke-dasharray="6 5"/>
+  <text x="290" y="152" fill="#dfe8f5" font-family="Georgia, serif" font-style="italic" font-size="16">x</text>
+  <text x="168" y="26" fill="#dfe8f5" font-family="Georgia, serif" font-style="italic" font-size="16">y</text>
+  <text x="50" y="232" fill="#f6f1e4" font-family="Georgia, serif" font-style="italic" font-size="15">y = f(x)</text>
+</svg>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contactos · Pensamiento Matemático</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header class="encabezado">
+    <a class="btn-inicio" href="index.html" title="Inicio">Inicio</a>
+    <h1>YSLS · Pensamiento Matemático</h1>
+    <p class="lema">Contactos</p>
+  </header>
+
+  <main>
+    <section class="hoja">
+
+      <div class="cuaderno-cab">
+        <div>Nombre: ______________________</div>
+        <div class="fecha"><span>Día</span><span>Mes</span><span>Año</span></div>
+        <div>Tema: Contactos</div>
+      </div>
+
+      <h2>Contactos</h2>
+      <p class="subrayado">Plataforma de e-learning desarrollada por:</p>
+
+      <!-- Correos inventados: cámbialos por los reales -->
+      <div class="integrantes">
+        <p class="nombre">Allison Salinas Gonzales</p>
+        <p class="dato">Grupo: 5BVP</p>
+        <p class="dato">correo: allison.salinas5bvp@gmail.com</p>
+        <br>
+        <p class="nombre">Fernando De la Cruz Pascual</p>
+        <p class="dato">Grupo: 5BVP</p>
+        <p class="dato">correo: fernando.delacruz5bvp@gmail.com</p>
+        <br>
+        <p class="nombre">Diego Aaron Desales Sanches</p>
+        <p class="dato">Grupo: 5BVP</p>
+        <p class="dato">correo: diego.desales5bvp@gmail.com</p>
+      </div>
+
+      <p class="subrayado">Escríbenos:</p>
+
+      <!-- El formulario manda los datos a estos dos correos:
+           allisalinasg1@gmail.com y ferlit2110@gmail.com -->
+      <form class="formulario" action="mailto:allisalinasg1@gmail.com,ferlit2110@gmail.com?subject=Contacto%20YSLS%20-%20Pensamiento%20Matem%C3%A1tico" method="post" enctype="text/plain">
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="apellido1">Primer apellido:</label>
+        <input type="text" id="apellido1" name="primer_apellido" required>
+
+        <label for="apellido2">Segundo apellido:</label>
+        <input type="text" id="apellido2" name="segundo_apellido">
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="domicilio">Domicilio:</label>
+        <input type="text" id="domicilio" name="domicilio">
+
+        <fieldset>
+          <legend>Sexo:</legend>
+          <div class="opciones">
+            <label><input type="radio" name="sexo" value="Hombre"> Hombre</label>
+            <label><input type="radio" name="sexo" value="Mujer"> Mujer</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Estudios:</legend>
+          <div class="opciones">
+            <label><input type="checkbox" name="estudios" value="Secundaria"> Secundaria</label>
+            <label><input type="checkbox" name="estudios" value="Bachillerato"> Bachillerato</label>
+            <label><input type="checkbox" name="estudios" value="Posgrado"> Posgrado</label>
+          </div>
+        </fieldset>
+
+        <label for="edad">¿Cuál es tu rango de edad? (elige solo uno)</label>
+        <select id="edad" name="rango_edad">
+          <option>Menor de 18</option>
+          <option>18 a 25</option>
+          <option>26 a 40</option>
+          <option>Más de 40</option>
+        </select>
+
+        <label for="comentarios">Comentarios y observaciones:</label>
+        <textarea id="comentarios" name="comentarios" placeholder="No olvides firmar tu comentario."></textarea>
+
+        <div class="botones">
+          <button class="boton" type="submit">Enviar datos</button>
+          <button class="boton secundario" type="reset">Borrar datos</button>
+        </div>
+      </form>
+
+    </section>
+
+    <nav class="navegacion">
+      <a href="index.html">Menú</a>
+      <a href="temario.html">Temario</a>
+      <a href="introduccion.html">Introducción</a>
+      <a class="activa" href="contacto.html">Contactos</a>
+    </nav>
+  </main>
+
+  <footer class="pie">YSLS · Pensamiento Matemático · 5BVP · 2026</footer>
+
+</body>
+</html>

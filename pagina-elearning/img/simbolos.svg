@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240">
+  <rect width="320" height="240" fill="#0b1030"/>
+  <g font-family="Georgia, 'Times New Roman', serif" fill="#dfe8f5" text-anchor="middle">
+    <text x="70" y="90" font-size="68">π</text>
+    <text x="165" y="90" font-size="68" fill="#a9bfdf">∑</text>
+    <text x="255" y="90" font-size="68">√</text>
+    <text x="70" y="180" font-size="60" fill="#a9bfdf">∞</text>
+    <text x="165" y="180" font-size="60">÷</text>
+    <text x="255" y="180" font-size="60" fill="#a9bfdf">%</text>
+  </g>
+  <g fill="#f3f6fb"><path d="M300,20 l3,-10 l3,10 l10,3 l-10,3 l-3,10 l-3,-10 l-10,-3z" transform="translate(-20,0)"/><path d="M20,210 l2,-7 l2,7 l7,2 l-7,2 l-2,7 l-2,-7 l-7,-2z"/></g>
+</svg>
